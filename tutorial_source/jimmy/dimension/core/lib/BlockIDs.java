@@ -11,4 +11,6 @@ public class BlockIDs {
 	public static int tutGrass = ConfigHandler.tutGrassID;
 	public static int tutLog = ConfigHandler.tutLogID;
 	public static int tutLeaf = ConfigHandler.tutLeafID;
+	public static int tutPortal = ConfigHandler.tutPortalID;
+	public static int tutFire = ConfigHandler.tutFireID;
 }

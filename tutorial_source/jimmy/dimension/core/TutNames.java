@@ -13,5 +13,7 @@ public class TutNames {
 		reg.addName(TutBlocks.tutGrass, "Tutorial Grass");
 		reg.addName(TutBlocks.tutLog, "Tutorial Log");
 		reg.addName(TutBlocks.tutLeaf, "Tutorial Leaf");
+		reg.addName(TutBlocks.tutFire,"Tutorial Fire");
+		reg.addName(TutBlocks.tutPortal, "Tutorial Portal");
 	}
 }

@@ -19,7 +19,7 @@ public class ConfigHandler {
 	}
 
 	//Block veriables for ids
-	public static int tutStoneID, tutDirtID, tutGrassID, tutLogID, tutLeafID;
+	public static int tutStoneID, tutDirtID, tutGrassID, tutLogID, tutLeafID, tutPortalID, tutFireID;
 
 	private static void InitConfigBlocks(Configuration config) {
 		int id = 2000;//Basic int for ids
@@ -28,8 +28,10 @@ public class ConfigHandler {
 		tutDirtID = config.getTerrainBlock("WorldGen Blocks", "tutDirtID", ++terrainID, "").getInt();
 		tutGrassID = config.getTerrainBlock("WorldGen Blocks", "tutGrassID", ++terrainID, "").getInt();
 		
-		tutLogID = config.getTerrainBlock("Blocks", "tutLogID", ++terrainID, "").getInt();
-		tutLeafID = config.getTerrainBlock("Blocks", "tutLeafID", ++terrainID, "").getInt();
+		tutLogID = config.getBlock("Blocks", "tutLogID", ++id, "").getInt();
+		tutLeafID = config.getBlock("Blocks", "tutLeafID", ++id, "").getInt();
+		tutPortalID = config.getBlock("Blocks", "tutPortalID", ++id).getInt();
+		tutFireID = config.getBlock("Blocks", "tutFireID", ++id).getInt();
 	}
 
 	//Item veriables
